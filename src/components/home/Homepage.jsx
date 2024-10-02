@@ -95,14 +95,18 @@ export default function Homepage() {
             {/* for buttons mobile */}
             <div className='mx-auto mt-10 gap-4 button-div md:w-full w-[100%] sm:hidden block' >
                 <div className='w-[60%] mx-auto'>
-                    <button className='hover-bg px-12 py-4 rounded-full text-lg border border-transparent w-full'>
-                        <span className="relative z-10 font-[Inter]">Request Demo</span>
-                    </button>
+                    <Link to='/book-demo'>
+                        <button className='hover-bg px-12 md:py-4 py-3 rounded-full md:text-lg border border-transparent w-full'>
+                            <span className="relative z-10 font-[Inter]">Request Demo</span>
+                        </button>
+                    </Link>
                 </div>
                 <div className='w-[60%] mx-auto'>
-                    <button className="hover-slide-bg relative overflow-hidden border border-white px-12 py-4 rounded-full text-white mt-4 w-full">
-                        <span className="relative z-10 font-[Inter]">Learn More</span>
-                    </button>
+                    <Link to='/solutions'>
+                        <button className="hover-slide-bg relative overflow-hidden border border-white px-12 md:py-4 py-3 rounded-full text-white mt-4 w-full">
+                            <span className="relative z-10 font-[Inter]">Learn More</span>
+                        </button>
+                    </Link>
                 </div>
                 
             </div>
@@ -157,7 +161,7 @@ export default function Homepage() {
             <div className='grid grid-cols-4 gap-8 w-[95%] mx-auto my-20'>
                 <div className='sm:h-[360px] bg-green-100 rounded-2xl sm:p-10 p-10 card-div sm:col-span-2 lg:col-span-1 col-span-4'>
                     <div className='h-20 bg-white w-20 mx-auto rounded-full flex justify-center items-center'>
-                        <span className='text-green-500 lg:text-5xl'>
+                        <span className='text-green-500 text-5xl'>
                             <ion-icon name="briefcase-outline"></ion-icon>
                         </span>
                     </div>
@@ -166,7 +170,7 @@ export default function Homepage() {
                 </div>
                 <div className='sm:h-[360px] bg-purple-100 rounded-2xl sm:p-10 p-10 card-div sm:col-span-2 lg:col-span-1 col-span-4'>
                     <div className='h-20 bg-white w-20 mx-auto rounded-full flex justify-center items-center'>
-                        <span className='text-purple-500 lg:text-5xl'>
+                        <span className='text-purple-500 text-5xl'>
                             <ion-icon name="hammer-outline"></ion-icon>
                         </span>
                     </div>
@@ -175,7 +179,7 @@ export default function Homepage() {
                 </div>
                 <div className='sm:h-[360px] bg-orange-100 rounded-2xl sm:p-10 p-10 card-div sm:col-span-2 lg:col-span-1 col-span-4'>
                     <div className='h-20 bg-white w-20 mx-auto rounded-full flex justify-center items-center'>
-                        <span className='text-orange-500 lg:text-5xl'>
+                        <span className='text-orange-500 text-5xl'>
                             <ion-icon name="cash-outline"></ion-icon>
                         </span>
                     </div>
@@ -184,7 +188,7 @@ export default function Homepage() {
                 </div>
                 <div className='sm:h-[360px] bg-teal-100 rounded-2xl p-10 card-div sm:col-span-2 lg:col-span-1 col-span-4'>
                     <div className='h-20 bg-white w-20 mx-auto rounded-full flex justify-center items-center'>
-                    <   span className='text-teal-500 lg:text-5xl'>
+                    <   span className='text-teal-500 text-5xl'>
                             <ion-icon name="flash-outline"></ion-icon>
                         </span>
                     </div>
@@ -267,7 +271,7 @@ export default function Homepage() {
             </div> */}
 
             <div className='grid grid-cols-6 gap-8 p-6 mt-10'>
-                <div className='service-div lg:col-span-2 sm:col-span-3 col-span-6 h-96 rounded-3xl shadow-lg bg-white transform scale-100 transition-transform duration-500 ease-in-out hover:scale-[1.03] p-16'>
+                <div className='service-div lg:col-span-2 sm:col-span-3 col-span-6 h-96 rounded-3xl shadow-lg bg-white transform scale-100 transition-transform duration-500 ease-in-out hover:scale-[1.03] lg:p-16 px-10 py-16'>
                     <div className='h-20 w-20'>
                         <img src={accounting} alt="" className=''/>
                         
@@ -279,7 +283,7 @@ export default function Homepage() {
                         <p className='text-gray-500 font-[Roboto]'>Streamline your financial operations with automated invoicing, expense tracking, and real-time reporting—simplifying complex accounting processes.</p>
                     </div>
                 </div>
-                <div className='service-div lg:col-span-2 sm:col-span-3 col-span-6 h-96 rounded-3xl shadow-lg bg-white transform scale-100 transition-transform duration-500 ease-in-out hover:scale-[1.03] p-16'>
+                <div className='service-div lg:col-span-2 sm:col-span-3 col-span-6 h-96 rounded-3xl shadow-lg bg-white transform scale-100 transition-transform duration-500 ease-in-out hover:scale-[1.03] lg:p-16 px-10 py-16'>
                     <div className='h-20 w-20'>
                         <img src={hr} alt="" className=''/>
                     </div>
@@ -290,7 +294,7 @@ export default function Homepage() {
                         <p className='text-gray-500 font-[Roboto]'>Manage employee data, attendance, payroll, and benefits seamlessly with our all-in-one HR tool, ensuring compliance and accuracy.</p>
                     </div>
                 </div>
-                <div className='service-div lg:col-span-2 sm:col-span-3 col-span-6 h-96  rounded-3xl shadow-lg bg-white transform scale-100 transition-transform duration-500 ease-in-out hover:scale-[1.03] p-16'>
+                <div className='service-div lg:col-span-2 sm:col-span-3 col-span-6 h-96  rounded-3xl shadow-lg bg-white transform scale-100 transition-transform duration-500 ease-in-out hover:scale-[1.03] lg:p-16 px-10 py-16'>
                     <div className='h-20 w-20'>
                         <img src={crm} alt="" className=''/>
                     </div>
@@ -301,7 +305,7 @@ export default function Homepage() {
                         <p className='text-gray-500 font-[Roboto]'>Boost sales and customer satisfaction with powerful lead management, real-time tracking, and automated follow-ups in one CRM system.</p>
                     </div>
                 </div>
-                <div className='service-div lg:col-span-2 sm:col-span-3 col-span-6 h-96  rounded-3xl shadow-lg bg-white transform scale-100 transition-transform duration-500 ease-in-out hover:scale-[1.03] p-16'>
+                <div className='service-div lg:col-span-2 sm:col-span-3 col-span-6 h-96  rounded-3xl shadow-lg bg-white transform scale-100 transition-transform duration-500 ease-in-out hover:scale-[1.03] lg:p-16 px-10 py-16'>
                     <div className='h-20 w-20 '>
                         <img src={travel} alt="" className=''/>
                     </div>
@@ -312,7 +316,7 @@ export default function Homepage() {
                         <p className='text-gray-500 font-[Roboto]'> Effortlessly manage business trips, approvals, expenses, and bookings with a complete travel solution for your team’s journeys.</p>
                     </div>
                 </div>
-                <div className='service-div lg:col-span-2 sm:col-span-3 col-span-6 h-96  rounded-3xl shadow-lg bg-white transform scale-100 transition-transform duration-500 ease-in-out hover:scale-[1.03] p-16'>
+                <div className='service-div lg:col-span-2 sm:col-span-3 col-span-6 h-96  rounded-3xl shadow-lg bg-white transform scale-100 transition-transform duration-500 ease-in-out hover:scale-[1.03] lg:p-16 px-10 py-16'>
                     <div className='h-20 w-20'>
                     <img src={inventory} alt="" />
                     </div>
@@ -323,7 +327,7 @@ export default function Homepage() {
                         <p className='text-gray-500 font-[Roboto]'>Stay in control of your stock with real-time updates, automated reorder points, and full traceability of every item across locations.</p>
                     </div>
                 </div>
-                <div className='service-div lg:col-span-2 sm:col-span-3 col-span-6 h-96  rounded-3xl shadow-lg bg-white hover-grow  p-16'>
+                <div className='service-div lg:col-span-2 sm:col-span-3 col-span-6 h-96  rounded-3xl shadow-lg bg-white hover-grow lg:p-16 px-10 py-16'>
                     <div className='h-20 w-20'>
                         <img src={workflow} alt="" />
                     </div>
@@ -561,7 +565,7 @@ export default function Homepage() {
             {/* <div className=' text-container mb-10 py-2'> 
                 <p className='text-5xl text-gray-700 font-bold leading-10 py-1 text-bg-17 font-[Inter] text-center'>Frequently asked questions</p>
             </div> */}
-            <div className='grid grid-cols-2'>
+            <div className='lg:grid grid-cols-2'>
                 <div className='md:col-span-1 col-span-2 relative lg:block hidden pic'>
                     <div className='w-[90%] mx-auto mt-8'>
                         <img src={picture7} alt="" className='object-cover sm:w-full shadow-xl rounded-3xl h-[650px]' />
@@ -599,14 +603,14 @@ export default function Homepage() {
         {/* contact us */}
         <div className='my-20 relative contact'>
             <div className='relative py-12 '>
-                <div className='w-[90%] mx-auto bg-blue-600 h-[550px] rounded-lg py-32 '>
-                    <div className='lg:w-[50%] w-[80%] mx-auto'>
+                <div className='w-[90%] mx-auto bg-blue-600 lg:h-[550px] h-[480px] rounded-lg py-32 '>
+                    <div className='lg:w-[50%] w-[90%] mx-auto'>
                         <p className='text-center text-white font-semibold md:text-5xl text-3xl font-[Inter]'>Experience our product first-hand</p>
                     </div>
                     <div className="lg:w-[50%] w-[90%] mx-auto mt-10">
-                        <p className="text-center text-white text-xl font-[Roboto]">Discover how SydaSuite can transform your business. </p>
+                        <p className="text-center text-white md:text-xl text-lg font-[Roboto]">Discover how SydaSuite can transform your business. </p>
                     </div>
-                    <div className='flex justify-center mt-20'>
+                    <div className='flex justify-center lg:mt-20 mt-10'>
                         <button className='bg-white px-10 py-4 rounded-lg text-blue-600 text-xl font-[Roboto]'>
                             <ScrollToTopLink to="/book-demo">
                                 Book a Demo
@@ -615,9 +619,9 @@ export default function Homepage() {
                     </div>
                     
                 </div>
-                <div className='border-[30px] md:border-[40px] rounded-full border-white md:h-40 md:w-40 h-32 w-32 absolute top-0 left-0'></div>   
+                <div className='border-[30px] md:border-[40px] rounded-full border-white md:h-40 md:w-40 h-28 w-28 absolute top-0 left-0'></div>   
             </div>
-            <div className='w-[90%] mx-auto h-[550px] rounded-lg py-28 z-[-10] absolute top-[10%] right-[3%] backing' >
+            <div className='w-[90%] mx-auto h-[480px] rounded-lg py-28 z-[-10] absolute top-[10%] right-[3%] backing' >
 
             </div>
         </div>
