@@ -1,0 +1,186 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main-bg{
+  background-image: linear-gradient(117deg, #ffc9e700,  #3f9fd2  66%);
+  background-color: #009FF7;
+}
+
+.nav-bg{
+  background-image: linear-gradient(16deg, #ffc9e700,  #3f9fd2  96%);
+  background-color: #009FF7;
+}
+
+.white-bg{
+  background-color: #ecf5ff;
+}
+
+/* #93c5fd  #2563eb */
+
+.seperator{
+  position: relative;
+  height: 20vw;
+  /* overflow: hidden; */
+  /* background-color: rgb(233 213 255); */
+  background-color: white;
+  z-index: -10;
+}
+
+.seperator::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background: rgb(147 197 253); */
+  /* background-color: red; */
+  background-image: linear-gradient(42deg, #ffc9e700,  #3f9fd2  90%);
+  background-color: #009FF7;
+  transform-origin: 0 100%;
+  transform: skew(0, -10deg);
+}
+
+.hover-slide-bg {
+  transition: color 0.2s ease;
+  background: transparent;
+}
+
+.hover-slide-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.hover-slide-bg:hover {
+  color: black;
+}
+
+.hover-slide-bg:hover::before {
+  transform: scaleX(1);
+}
+
+/* first button */
+.hover-bg {
+  position: relative;
+  overflow: hidden;
+  transition: color 0.2s ease;
+  background-color: white;
+  color: black;
+}
+
+.hover-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background-color: rgb(147 197 253); */
+  background-color: #34a7e5;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.hover-bg:hover {
+  color: white;
+}
+
+.hover-bg:hover::before {
+  transform: scaleX(1);
+}
+
+.title{
+  background: rgb(219 234 254);
+  width: 220px;
+
+}
+
+.text-container {
+  position: relative;
+  overflow: hidden; /* This will hide the text while it slides in */
+}
+
+.back-g{
+  background-image: url('./assets/bg1.jpg');
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+
+}
+
+/* service divs */
+.hover-grow {
+  transform: scale(1);
+  will-change: transform;
+  transition: transform 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.hover-grow:hover {
+  transform: scale(1.03);
+}
+
+
+.service-container{
+  background: linear-gradient(to right,  transparent, rgba(147, 197, 253, .2));
+}
+
+
+/* divider css */
+.spacer {
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.layer{
+  background-image: url('./assets/wave-haikei.png');
+}
+
+.layer2{
+  background-image: url('./assets/wave-haikei2.png'); 
+}
+
+.backing{
+  background-image: linear-gradient(255deg, #fa9372, #eca0ff 50%, #2563eb);
+}
+
+.foot{
+  background-color: #141f39;
+}
+
+
+/* solutions page */
+.solution-bg{
+  /* background-image: url('./assets/wave-haikei-3.png'); */
+  background-image: url('./assets/wave-3.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.industry-bg{
+  background-image: url('./assets/wave-haikei.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.gradient-bg{
+  background-image: url('./assets/gradient.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
