@@ -36,8 +36,8 @@
   bottom: 0;
   /* background: rgb(147 197 253); */
   /* background-color: red; */
-  background-image: linear-gradient(42deg, #ffc9e700,  #3f9fd2  90%);
-  background-color: #009FF7;
+  /* background-image: linear-gradient(42deg, #ffc9e700,  #3f9fd2  90%); */
+  /* background-color: #009FF7; */
   transform-origin: 0 100%;
   transform: skew(0, -10deg);
 }

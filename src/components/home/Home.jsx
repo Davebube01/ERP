@@ -21,23 +21,33 @@ export default function Home() {
     }),
     
     mm.add("(min-width: 1024px)", () => {
+
+      gsap.set('.dash-container', {
+        perspective: 4000 // Adjust this value to increase or decrease the 3D effect
+      });
+    
       gsap.fromTo('.dash', 
         { 
-          rotationX: 50, // Start fully reclined
-          transformOrigin: "bottom", // Set the transform origin to the bottom
-          transformStyle: "preserve-3d", // Ensure 3D transformations
+          rotationX: 50,
+          y: 200, // Start slightly below its final position
+          z: -200, // Start pushed back in 3D space
+          transformOrigin: "center bottom",
+          transformStyle: "preserve-3d",
+          opacity: 1 // Start fully transparent
         },
         {
-          rotationX: 0, // End standing upright
+          rotationX: 0,
+          y: 0,
+          z: 0,
+          opacity: 1, // Fade in to full opacity
           scrollTrigger: {
             trigger: '.dash',
-            // pin: true,
-            start: 'top bottom', // When the top of the div hits the bottom of the viewport
-            end: '=+100px', // When the bottom of the div leaves the top of the viewport
-            scrub: 1, // Smooth scrubbing on scroll with a slight delay
-            markers: false // Enable this for debugging (shows the scroll positions)
+            start: 'top bottom',
+            end: 'bottom top',
+            scrub: 1,
+            markers: false
           },
-          ease: 'power1.inOut', // Smoother, more linear transition
+          ease: 'power2.out', // Slightly more pronounced easing
         }
       );
     });

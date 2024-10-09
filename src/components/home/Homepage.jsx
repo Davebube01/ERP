@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import { initVantaWaves, destroyVantaWaves  } from '../../components/vantawaves.js';
 import ScrollToTopLink from '../ScrollTopLink'
 import Faq from './Faq'
 import dashboard from '../../assets/dashboard.png'
@@ -63,16 +64,25 @@ export default function Homepage() {
         }
     ]
 
+    useEffect(() => {
+        initVantaWaves();
+        
+        // Cleanup function
+        return () => {
+          destroyVantaWaves();
+        };
+      }, []);
+
   return (
     <>
-    <section className='sm:mt-0 mt-20 relative'>
-        <div className='md:h-[900px] lg:h-[977px]  hero relative main-bg'>
+    <section className='sm:mt-0 relative'>
+        <div className='md:h-[900px] lg:h-[977px] md:pt-28 pt-20 pb-10 md:pb-0 hero relative main-bg vanta-waves' id="vanta-waves">
             <div className='xl:w-[60%] lg:w-[70%] md:w-[85%] w-[80%] w-full mx-auto md:pt-28 pt-20 text-container'>
-                <p className='md:text-[50px] sm:text-[40px] text-[35px] text-center text-white font-bold font-[Roboto] bg-text-1'>Transform your business with SydaSuite</p>
+                <p className='md:text-[55px] sm:text-[40px] text-[35px] text-center text-white font-bold font-[Roboto] bg-text-1'>Transform your business with SydaSuite</p>
                 
             </div>
             <div className='lg:w-[50%] md:w-[55%] w-[90%] mx-auto mt-6 bg-text-2'>
-                <p className='text-white text-lg text-center font-[Roboto]'>The complete entreprise software solution for growing businesses .</p>
+                <p className='text-white text-lg md:text-xl text-center font-[Roboto]'>The complete entreprise software solution for growing businesses .</p>
                 </div>
             <div className='mx-auto mt-10 gap-4 flex items-center justify-center button-div md:w-full w-[80%] sm:flex hidden' >
                 <div >
@@ -140,13 +150,15 @@ export default function Homepage() {
                 </span>
             </div>
             
-            <div className='dash w-[90%] mx-auto lg:absolute inset-0  lg:top-[60%] lg:mt-0 mt-10 '>
-                <img src={dashboard} alt="" className='object-cover md:object-fill lg:h-[700px] p-5  bg-white w-full sm:rounded-2xl md:rounded-2xl z-10 shadow-xl rounded-xl'/>
+            <div className="dash-container lg:mt-28 mt-10 mx-auto">
+                <div className='dash mx-auto lg:absolute inset-0 lg:top-[60%] w-[90%]'>
+                    <img src={dashboard} alt="" className='object-cover md:object-fill lg:h-[720px] p-5 bg-white w-full sm:rounded-2xl md:rounded-2xl z-10 shadow-xl rounded-xl'/>
+                </div>
             </div>
         </div>
 
         {/* seperator */}
-        <div className='seperator '></div>
+        <div className='seperator md:block hidden'></div>
 
         {/* what we do div */}
         <div className='min-h-[800px] md:pt-36 pt-20'>

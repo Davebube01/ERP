@@ -3,7 +3,7 @@ import React from 'react'
 export default function Contact_page() {
   return (
     <>
-        <div className='lg:flex bg-[#ecf5ff] min-h-[800px] px-6 py-24 items-center gap-1'>
+        <div className='lg:flex bg-[#ecf5ff] min-h-[800px] px-6 pb-24 md:pt-48 pt-28 items-center gap-1'>
             <div className='lg:w-[60%]'>
                 <p className='lg:text-6xl text-4xl font-medium text-gray-800 font-[Roboto] md:text-center lg:text-left'>Connect with us</p>
                 <p className='lg:text-lg lg:mt-8 mt-4 text-[#7174a5] md:text-center lg:text-left md:w-[600px] lg:w-auto mx-auto'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id magna malesuada tempor mitellus eget auctor parturient montes dolor.</p>

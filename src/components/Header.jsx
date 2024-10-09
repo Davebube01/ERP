@@ -34,11 +34,11 @@ const Header = () => {
 
     return (
         <>
-        <header className={`font-[poppins] sm:relative fixed md:w-[95%] lg:w-[90%] md:mx-auto md:rounded-xl inset-x-0 top-0 left-0 lg:py-3 py-2 md:px-8 px-1 lg:h-24 h-20 transition-colors duration200 ease-in-out z-50  border-b-2 border-gray-200 ${scrolled ? 'bg-white shadow-2xl' : 'bg-white '}`}>
+        <header className={`font-[poppins] sm:absolute fixed md:w-[95%] lg:w-[90%] md:mx-auto md:rounded-xl inset-x-0 md:top-8 left-0 lg:py-3 py-2 md:px-8 px-1 lg:h-24 h-20 transition-colors duration200 ease-in-out z-50  border-b-2 border-gray-200 ${scrolled ? 'bg-white shadow-2xl' : 'bg-white '}`}>
             <nav className='flex items-center justify-between' aria-label='Global'>
                 <div className='p-3'>
                     <ScrollToTopLink to='/'>
-                        <img src={logo} alt=""  className='object-cover lg:h-16 h-12'/>{/* <h4 className={`${scrolled ? 'text-black' : 'text-black'} leading-7 font-bold italic text-lg `}>SydaSuite</h4> */}
+                        <img src={logo} alt=""  className='object-cover h-12'/>{/* <h4 className={`${scrolled ? 'text-black' : 'text-black'} leading-7 font-bold italic text-lg `}>SydaSuite</h4> */}
                     </ScrollToTopLink>
                 </div>
                 <div className=''>
@@ -105,7 +105,7 @@ const Header = () => {
                 </div>
                 <div className='flex items-center gap-4 hidden md:flex'>
                     {/* <button className='btn rounded-lg border-2 border-[#2C4E80] px-8 py-2 hover:text-white'>Log In</button> */}
-                    <button className='btn rounded-lg border px-6 py-2 text-white bg-blue-500 hover:bg-blue-600 transition-all duration-300 ease-in-out'>Register</button>
+                    <button className='btn rounded-lg border px-6 py-2 text-white bg-[#0a97e3] hover:bg-[#34a7e5] transition-all duration-300 ease-in-out'>Register</button>
                 </div>
             </nav>
             

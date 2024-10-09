@@ -17,24 +17,32 @@ export default function Footer() {
           <p className='mt-8 md:text-lg font-[inter]'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, facere.</p>
           <div className='flex mt-10 gap-8'>
             <div className= 'rounded-full'>
+              <a href="https://www.instagram.com/sydanigroup/">
               <span className='md:text-4xl text-3xl'>
                 <ion-icon name="logo-instagram"></ion-icon>
               </span>
+              </a>
             </div>
             <div className='h-10 w-10 rounded-full'>
-              <span className='md:text-4xl text-3xl'>
-                <ion-icon name="logo-twitter"></ion-icon>
-              </span>
+              <a href="">
+                <span className='md:text-4xl text-3xl'>
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </span>
+              </a>
             </div>
             <div className='h-10 w-10 rounded-full'>
-              <span className='md:text-4xl text-3xl'>
+              <a href="https://www.facebook.com/sydanigrp">
+                <span className='md:text-4xl text-3xl'>
                   <ion-icon name="logo-facebook"></ion-icon>
                 </span>
+              </a>
             </div>
             <div className='h-10 w-10 rounded-full'>
-            < span className='md:text-4xl text-3xl'>
+            <a href="https://www.linkedin.com/company/sydani-group">
+              <span className='md:text-4xl text-3xl'>
                 <ion-icon name="logo-linkedin"></ion-icon>
               </span>
+            </a>
             </div>
           </div>
         </div>

@@ -25,7 +25,7 @@ export default function Solutions_page() {
 
   return (
     <>
-        <div className='lg:h-[630px] h-[470px] solution-bg bg-[#ecf5ff] pt-28 '>
+        <div className='lg:h-[700px] h-[470px] solution-bg bg-[#ecf5ff] lg:pt-52 pt-28'>
             <p className='md:text-7xl text-4xl text-center font-semibold text-gray-800 font-[Inter]'>Our Solution</p>
             <p className='lg:w-[60%] w-[95%] mx-auto md:text-xl text-center mt-10 font-[Roboto] text-gray-700'>
             We offer a full suite of features designed to streamline operations, improve efficiency, and provide deep insights. Whether you're managing a business, an educational institution, or a healthcare facility, SydaSuite has you covered

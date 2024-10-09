@@ -10,7 +10,7 @@ import bonding from "../../assets/bonding.jpg"
 export default function Company_page() {
   return (
     <>
-        <div className='mt-28 mb-20 pt-10'>
+        <div className='md:mt-48 mt-28 mb-20 pt-10'>
             <p className='text-center md:text-6xl text-4xl w-[90%] mx-auto font-bold text-gray-800 font-[Inter] '>Sydani Technologies</p>
             <div className='md:w-[60%] w-[90%] mx-auto mt-6'>
                 <p className='text-center md:text-2xl text-xl font-[Roboto] text-gray-600'>Leading the Charge in the
