@@ -3,7 +3,7 @@ import React from 'react'
 export default function Demo_page() {
   return (
     <>
-        <div className='lg:flex bg-[#ecf5ff] min-h-[800px] px-6 py-24 items-center gap-1'>
+        <div className='lg:flex bg-[#ecf5ff] min-h-[800px] px-6 pb-24 md:pt-48 pt-28 items-center gap-1'>
             <div className='lg:w-[60%]'>
                 <div className='flex items-center'>
                     <div>
