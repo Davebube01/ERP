@@ -633,7 +633,7 @@ export default function Homepage() {
                 </div>
                 <div className='border-[30px] md:border-[40px] rounded-full border-white md:h-40 md:w-40 h-28 w-28 absolute top-0 left-0'></div>   
             </div>
-            <div className='w-[90%] mx-auto h-[480px] rounded-lg py-28 z-[-10] absolute top-[10%] right-[3%] backing' >
+            <div className='w-[90%] mx-auto lg:h-[550px] h-[480px] rounded-lg py-28 z-[-10] absolute top-[10%] right-[3%] backing' >
 
             </div>
         </div>

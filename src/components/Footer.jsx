@@ -14,7 +14,7 @@ export default function Footer() {
                   <img src={logo} alt=""  className='object-cover h-20'/>{/* <h4 className={`${scrolled ? 'text-black' : 'text-black'} leading-7 font-bold italic text-lg `}>SydaSuite</h4> */}
               </Link>
           </div>
-          <p className='mt-8 md:text-lg font-[inter]'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, facere.</p>
+          <p className='mt-8 md:text-lg font-[inter]'>The complete enterprise software solution for growing businesses.</p>
           <div className='flex mt-10 gap-8'>
             <div className= 'rounded-full'>
               <a href="https://www.instagram.com/sydanigroup/">
@@ -24,7 +24,7 @@ export default function Footer() {
               </a>
             </div>
             <div className='h-10 w-10 rounded-full'>
-              <a href="">
+              <a href="https://twitter.com/SydaniGroup">
                 <span className='md:text-4xl text-3xl'>
                   <ion-icon name="logo-twitter"></ion-icon>
                 </span>
@@ -58,7 +58,7 @@ export default function Footer() {
             </div>
             <div className='ml-6'>
               <p className='text-lg font-[Inter]'>Call now</p>
-              <p className='text-lg mt-1 font-[Roboto]'>(+234) 800 000 0000</p>
+              <p className='text-lg mt-1 font-[Roboto]'>+234 803 049 6000</p>
             </div>
           </div>
           <div className='flex  lg:mt-10 mt-5'>
@@ -69,7 +69,7 @@ export default function Footer() {
             </div>
             <div className='ml-6'>
               <p className='text-lg font-[Inter]'>Email us</p>
-              <p className='text-lg mt-1 font-[Roboto]'>sydanitech@gmail.com</p>
+              <p className='text-lg mt-1 font-[Roboto]'>contact@sydani.org</p>
             </div>
           </div>
         </div>

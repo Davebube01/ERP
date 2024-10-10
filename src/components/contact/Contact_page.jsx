@@ -17,7 +17,7 @@ export default function Contact_page() {
                         </div>
                         <div className='ml-6'>
                             <p className='lg:text-lg text-gray-600 font-[inter] '>Email us:</p>
-                            <p className='mt-1 md:text-lg lg:text-2xl md:font-bold lg:font-medium text-[#7174a5] font-[inter]'>info@example.com</p>
+                            <p className='mt-1 md:text-lg lg:text-2xl md:font-bold lg:font-medium text-[#7174a5] font-[inter]'>contact@sydani.org</p>
                         </div>
                     </div>
 
@@ -29,7 +29,7 @@ export default function Contact_page() {
                         </div>
                         <div className='ml-6'>
                             <p className='lg:text-lg text-gray-600 font-[inter]'>Call us:</p>
-                            <p className='mt-1 lg:text-2xl font-medium text-[#7174a5] font-[inter]'>+234 910 000 0000</p>
+                            <p className='mt-1 lg:text-2xl font-medium text-[#7174a5] font-[inter]'>+234 803 049 6000</p>
                         </div>
                     </div>
                 </div>
@@ -41,7 +41,7 @@ export default function Contact_page() {
                     </div>
                     <div className='ml-6'>
                         <p className='text-lg text-gray-600 font-[inter]'>Find us on:</p>
-                        <p className='mt-1 lg:text-2xl font-medium text-[#7174a5] font-[inter]'>ATL express, CBD, Abuja</p>
+                        <p className='mt-1 lg:text-2xl font-medium text-[#7174a5] font-[inter]'>Plot 1422 Independence Avenue, Central <br /> Business District, Abuja, Nigeria.</p>
                     </div>
                 </div>
                 
