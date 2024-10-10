@@ -20,37 +20,37 @@ export default function Demo_page() {
             
             <div className='lg:w-[65%] bg-white min-h-[600px] rounded-[30px] shadow-xl p-12 lg:ml-6 mt-10 lg:mt-0'>
                 <form action="">
-                    <div className='flex gap-2 mt-6'>
+                    <div className='lg:flex gap-2 mt-6'>
                         <div className='w-[100%]'>
                             <label className='text-lg text-[#7174a9]'>Full name</label><br />
                             <input type="text" name="" id="" placeholder='Full name' className='py-4 px-6 mt-3 border w-[100%] rounded-lg text-lg'/>
                         </div>
                         
-                        <div className='w-[100%]'>
+                        <div className='w-[100%] lg:mt-0 mt-6'>
                             <label className='text-lg text-[#7174a9]'>Email</label><br />
                             <input type="email" name='' id='' placeholder='Email address' className='py-4 px-6 mt-3 border w-[100%] rounded-lg text-lg'/>
                         </div>
                         
                     </div>
-                    <div className='mt-6 flex gap-4'>
+                    <div className='mt-6 lg:flex gap-4'>
                         <div className='w-[100%]'>
                             <label className='text-lg text-[#7174a9]'>Phone</label> <br />
                             <input type="text" name="" id=""  placeholder='1 (888) 1234-5678' className='py-4 px-6 mt-3 border w-[100%] rounded-lg text-lg'/>
                         </div>
                         
-                        <div className='w-[100%]'>
+                        <div className='w-[100%] lg:mt-0 mt-6'>
                             <label className='text-lg text-[#7174a9]'>Company</label><br />
                             <input type="text" name='' id=''placeholder='Company name' className='py-4 px-6 mt-3 border w-[100%] rounded-lg text-lg'/>
                         </div>
                     </div>
 
-                    <div className='mt-6 flex gap-4'>
+                    <div className='mt-6 lg:flex gap-4'>
                         <div className='w-[100%]'>
                             <label className='text-lg text-[#7174a9]'>Website</label> <br />
                             <input type="text" name="" id=""  placeholder='company.com' className='py-4 px-6 mt-3 border w-[100%] rounded-lg text-lg'/>
                         </div>
                         
-                        <div className='w-[100%]'>
+                        <div className='w-[100%] lg:mt-0 mt-6'>
                             <label className='text-lg text-[#7174a9]'>Position</label><br />
                             <input type="text" name='' id=''placeholder='Head of Marketing' className='py-4 px-6 mt-3 border w-[100%] rounded-lg text-lg'/>
                         </div>
@@ -58,7 +58,7 @@ export default function Demo_page() {
 
                     
 
-                    <div className='mt-6 mb-2 flex justify-center'>
+                    <div className='mt-6 mb-2 flex justify-center '>
                         <button className='bg-blue-500 text-white px-10 py-3 text-lg font-semibold rounded-full hover:bg-blue-600 transition-all duration-300 ease-in-out '>Book Now</button>
                     </div>
 
