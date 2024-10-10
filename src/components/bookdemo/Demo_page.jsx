@@ -18,7 +18,7 @@ export default function Demo_page() {
             </div>
 
             
-            <div className='lg:w-[65%] bg-white min-h-[600px] rounded-[30px] shadow-xl p-12 lg:ml-6 mt-10 lg:mt-0'>
+            <div className='lg:w-[65%] bg-white min-h-[600px] rounded-[30px] shadow-xl lg:p-12 p-6 lg:ml-6 mt-10 lg:mt-0'>
                 <form action="">
                     <div className='lg:flex gap-2 mt-6'>
                         <div className='w-[100%]'>
